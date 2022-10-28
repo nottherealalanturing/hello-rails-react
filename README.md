@@ -28,6 +28,7 @@ Install gems with:
 
 ```Ruby
     bundle install
+    yarn install 
 ```
 
 Setup database with:
