@@ -1,8 +1,7 @@
 class API::V1::MessagesController < ApplicationController
-    def index
-        @message = Message.all[Random.new.rand(1..5)]
+  def index
+    @message = Message.all.sample
 
-        render :json => @message
-        
-    end
+    render json: @message
+  end
 end
